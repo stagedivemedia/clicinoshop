@@ -1,0 +1,22 @@
+{
+	"projectName": "clicinoshop",
+	"licenseText": "proprietary",
+	"pkgs": [{
+		"name": "clicinoshop CSS",
+		"file": "clicinoshop.css",
+		"isDebug": true,
+		"fileIncludes": [{
+			"text": "custom.css",
+			"path": "themes/"
+		}]
+	}, {
+		"name": "clicinoshop JS",
+		"file": "clicinoshop.js",
+		"isDebug": true,
+		"fileIncludes": [{
+			"text": "custom.js",
+			"path": "themes/"
+		}]
+	}],
+	"resources" : []
+}

@@ -1,0 +1,17 @@
+{
+	"name": "clicinoshop",
+	"description": "Aimeos clicinoshop extension",
+	"keywords": ["aimeos", "extension"],
+	"type": "typo3-cms-extension",
+	"prefer-stable": true,
+	"minimum-stability": "dev",
+	"require": {
+		"php": ">=5.5.0"
+	},
+	"autoload": {
+		"classmap": ["Classes"],
+		"psr-4": {
+			"Aimeos\\Aimeos\\": "Classes"
+		}
+	}
+}
