@@ -1,5 +1,5 @@
 {
-	"name": "clicinoshop",
+	"name": "stagedivemedia/clicinoshop",
 	"description": "Aimeos clicinoshop extension",
 	"keywords": ["aimeos", "extension"],
 	"type": "typo3-cms-extension",
