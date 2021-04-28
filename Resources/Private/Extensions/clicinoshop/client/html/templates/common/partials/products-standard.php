@@ -178,7 +178,7 @@ $detailFilter = array_flip( $this->config( 'client/html/catalog/detail/url/filte
 
 				</div>
 
-			</a>
+			
 
 
 			<div class="offer" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
@@ -306,9 +306,10 @@ $detailFilter = array_flip( $this->config( 'client/html/catalog/detail/url/filte
 					<?php endif; ?>
 
 				</form>
-
+				
 			<?php endif; ?>
 			<span class="product-more"> Jetzt kaufen!</span>
+			</a>
 		</li>
 
 	<?php endforeach; ?>

@@ -59,9 +59,7 @@ $optConfig = $this->config( 'client/jsonapi/url/config', [] );
                   <?php endif; ?>
             </div>
             <div class="social-image">
-                 <p>
-                       //TODO SOCIAL MEDIA Grafik Einfügen
-                 </p> 
+                 <img class="danke-bild" src="/fileadmin/user_upload/header/danke-bild.jpg" alt="">
             </div>
       </div>
 	

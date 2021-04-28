@@ -367,14 +367,13 @@ $errors = $this->get( 'summaryErrorCodes', [] );
 		<?php foreach( $this->get( 'summaryNamedTaxes', [] ) as $taxName => $map ) : ?>
 			<?php foreach( $map as $taxRate => $priceItem ) : ?>
 				<?php if( ( $taxValue = $priceItem->getTaxValue() ) > 0 ) : ?>
-					<div class="tax">
-						<div class="price"></div>
-                                    
-						<div>Umsatzsteuerbefreit – Kleinunternehmer gem. § 6 Abs. 1 Z 27 UStG</div>
+					<tr class="tax">
+						<td colspan="5"><?= $enc->html( sprintf( $priceTaxflag ? $taxFormatIncl : $taxFormatExcl, $this->number( $taxRate ), $this->translate( 'client/code', 'tax' . $taxName ) ) ); ?></td>
+						<td class="price"><?= $enc->html( sprintf( $priceFormat, $this->number( $taxValue, $precision ), $priceCurrency ) ); ?></td>
 						<?php if( $modify ) : ?>
-							<div class="action"></div>
+							<td class="action"></td>
 						<?php endif; ?>
-					</div>
+					</tr>
 				<?php endif; ?>
 			<?php endforeach; ?>
 		<?php endforeach; ?>

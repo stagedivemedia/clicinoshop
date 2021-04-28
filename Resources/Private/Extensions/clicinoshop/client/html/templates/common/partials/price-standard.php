@@ -86,6 +86,9 @@ $notax = $this->translate( 'client', '+ %1$s%% VAT' );
 			</span>
 		<?php endif; ?>
             <div class="price-bottom-line">
+					<span class="taxrate-custom">
+						<?= $enc->html( sprintf( ( $priceItem->getTaxFlag() ? $withtax : $notax ), $this->number( $priceItem->getTaxrate() ) ), $enc::TRUST ); ?>&nbsp; 
+					</span>
                   <!-- <span class="taxrate-custom">
                         <?= $enc->html( sprintf( ( $priceItem->getTaxFlag() ? $withtax : $notax ), $this->number( $priceItem->getTaxrate() ) ), $enc::TRUST ); ?>
                   </span> -->

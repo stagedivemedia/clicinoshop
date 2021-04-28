@@ -56,29 +56,24 @@ $this->pdf->setFooterFunction( function( $pdf ) {
 	$pdf->writeHtmlCell( 180, 22.5, 15, -42.5, '
 		<table cellpadding="1" style="font-size: 8px">
 			<tr>
-				<td style="font-weight: bold">Mag. Brigitte Girard</td>
+				<td style="font-weight: bold">Girard GesbR</td>
 				<td></td>
 				<td></td>
 			</tr>
 			<tr>
 				<td>Schmiedberg 13, 4483 Hargelsberg</td>
 				<td></td>
-				<td>Bank: TBA – Nichtvergessen </td>
+				<td>Bank: Allgemeine Sparkasse Oberösterreich</td>
 			</tr>
 			<tr>
 				<td>Telephone: +43 660 713 00 56</td>
 				<td></td>
-				<td>IBAN: TBA – Nichtvergessen</td>
+				<td>IBAN: AT14 2032 0321 0057 9213</td>
 			</tr>
 			<tr>
 				<td>E-Mail: office@girard.at</td>
 				<td></td>
-				<td>BIC: TBA – Nichtvergessen</td>
-			</tr>
-			<tr>
-				<td colspan="3">
-					<strong>Umsatzsteuerbefreit – Kleinunternehmer gem. § 6 Abs. 1 Z 27 UStG</strong>
-				</td>
+				<td>BIC: ASPKAT2LXXX</td>
 			</tr>
 		</table>
 	' );
@@ -98,7 +93,7 @@ $this->pdf->setFooterFunction( function( $pdf ) {
 		.meta { font-size: 8.5px }
 	</style>
 	<h1 class="address-self">
-		<span class="company">Brigitte Girard</span> · Schmiedberg 13 · 4483 Hargelsberg 
+		<span class="company">Girard GesbR</span> · Schmiedberg 13 · 4483 Hargelsberg 
 	</h1>
 	<table>
 		<tr>
@@ -177,8 +172,8 @@ $this->pdf->setFooterFunction( function( $pdf ) {
 		$this->config( 'client/html/email/common/summary/pdf', 'email/common/pdf-summary-partial' ),
 		array(
 			'summaryBasket' => $this->summaryBasket,
-			// 'summaryTaxRates' => $this->get( 'summaryTaxRates', [] ),
-			//'summaryNamedTaxes' => $this->get( 'summaryNamedTaxes', [] ),
+			'summaryTaxRates' => $this->get( 'summaryTaxRates', [] ),
+			'summaryNamedTaxes' => $this->get( 'summaryNamedTaxes', [] ),
 			'summaryShowDownloadAttributes' => $this->get( 'summaryShowDownloadAttributes', false ),
 			'summaryCostsDelivery' => $this->get( 'summaryCostsDelivery', 0 ),
 			'summaryCostsPayment' => $this->get( 'summaryCostsPayment', 0 ),
